@@ -2,8 +2,8 @@ html {
     box-sizing: border-box;
 }
 
-*, *:before, *:after{
-    box-sizing: initial;
+*, *::before, *::after{
+    box-sizing: inherit;
 }
 
 body{
@@ -12,6 +12,7 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
     
 }
 .main {
@@ -19,4 +20,48 @@ body{
     border-radius: 16px;
     width: 624px;
     margin: 16px;
+    padding: 32px;
+    
+}
+
+.person{
+    display: flex;
+    margin:0px;
+}
+
+.person__name{
+    margin: 0px;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: normal;
+    
+}
+
+.person__ocupation{
+    font-style: italic;
+    font-size: 18px;
+    color: #545454;
+    margin:0px;
+    margin-bottom: 16px;
+
+}
+.person__description{
+font-size: 16 px;
+line-height: 22px;
+}
+
+.person__picture{
+    margin-right: 26px;
+}
+a{
+    color: #E20613;
+    text-decoration: none;
+}
+
+.special{
+    color: #ED6D05;
+    font-weight: normal;
+}
+.person__description--with-margin{
+    margin-bottom: 22px;
 }
